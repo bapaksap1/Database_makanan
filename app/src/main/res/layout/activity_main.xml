@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Makanan!"
+        android:id="@+id/nama"
+        android:gravity="center" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="__________"
+        android:layout_below="@id/nama"
+        android:id="@+id/et_nama"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        android:id="@+id/harga"
+        android:layout_below="@+id/et_nama"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="__________"
+        android:layout_below="@id/harga"
+        android:id="@+id/et_harga"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:id="@+id/kategori"
+        android:layout_below="@+id/et_harga"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="__________"
+        android:layout_below="@id/kategori"
+        android:id="@+id/et_kategori"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_kategori"
+        android:text="Input"
+        android:gravity="center"
+        android:id="@+id/input"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:text="Lihat Data"
+        android:id="@+id/lihat"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
